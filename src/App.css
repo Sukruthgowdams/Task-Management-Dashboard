@@ -1,0 +1,149 @@
+/* General Styling */
+.App {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;  /* Adding a cleaner font */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  margin-bottom: 20px;  /* Added margin to separate from the rest of content */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/* Header Section */
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;  /* Changed alignment for a better flow */
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;  /* Added padding for a better layout */
+}
+
+/* Task Dashboard Styling */
+h1 {
+  font-size: 2.5rem;
+  color: #232121;
+  margin-bottom: 30px;  /* More spacing between title and content */
+  font-weight: 600;
+  text-align: center;
+}
+
+.MuiFormControl-root {
+  margin-bottom: 20px;  /* Added bottom margin to inputs */
+  width: 80%;  /* Ensure the inputs are more uniform */
+}
+
+.MuiTextField-root {
+  margin-bottom: 20px;  /* Added space between inputs */
+}
+
+button {
+  font-weight: 500;  /* Slightly bolder button text */
+}
+
+button:hover {
+  background-color: #9ca5d4;  /* Subtle hover effect */
+}
+
+/* Task List and Buttons */
+ul {
+  padding: 0;
+  list-style: none;
+  margin-top: 20px;
+}
+
+li {
+  padding: 12px;
+  margin: 10px 0;
+  background-color: #f4f4f4;
+  border-radius: 8px;  /* More rounded corners for a cleaner look */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styling */
+#a {
+  font-weight: 500; 
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;  /* Ensure the button is block-level */
+  margin-left: auto;  /* Center the button horizontally */
+  margin-right: auto;  /* Center the button horizontally */
+}
+
+/* Button hover effect */
+#a:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+.MuiTypography-root {
+  margin: 10px 0;
+}
+
+/* Dialogs */
+.MuiDialog-root {
+  max-width: 500px;
+  margin: auto;
+}
+
+.MuiDialogTitle-root {
+  background-color: #3f51b5;
+  color: white;
+  font-weight: bold;
+}
+
+.MuiDialogContent-root {
+  padding: 20px;
+}
+
+.MuiDialogActions-root {
+  justify-content: space-between;
+}
+
+.MuiButtonBase-root {
+  text-transform: none;  /* Prevents uppercase in button text */
+}
+
+/* Chart Section */
+.chart-container {
+  margin-top: 40px;
+}
+
+.chart-container .MuiTypography-root {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.chart-container .pie-chart {
+  display: flex;
+  justify-content: center;
+}
+
+.chart-container .percentage {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #333;
+  text-align: center;
+}
+
+.chart-container .percentage span {
+  font-size: 1.5rem;
+  color: #4caf50;
+}
